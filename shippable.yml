@@ -1,0 +1,15 @@
+language: none
+
+services:
+    - selenium 
+
+
+build:
+  pre_ci_boot:
+    image_name: drydock/aarch64_u16all
+    image_tag: master
+    pull: true
+    
+    
+  ci:
+     - java -jar /usr/local/selenium/selenium-server-standalone-3.11.0.jar --version
