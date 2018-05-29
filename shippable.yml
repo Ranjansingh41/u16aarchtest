@@ -1,7 +1,7 @@
 language: none
 
 services:
-    - memcached 
+    - mongodb 
 
 
 build:
@@ -12,4 +12,4 @@ build:
     
     
   ci:
-     - memcached -V
+     - mongod --version
