@@ -1,7 +1,7 @@
 language: none
 
 services:
-    - couchdb 
+    - sqlite3 
 
 
 build:
@@ -12,4 +12,4 @@ build:
     
     
   ci:
-     - couchdb -V
+     - sqlite3 --version
