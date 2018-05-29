@@ -1,7 +1,7 @@
 language: none
 
 services:
-    - mongodb 
+    - postgres 
 
 
 build:
@@ -12,4 +12,4 @@ build:
     
     
   ci:
-     - mongod --version
+     - psql --version
