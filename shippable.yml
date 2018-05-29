@@ -1,7 +1,7 @@
 language: none
 
 services:
-    - postgres 
+    - redis 
 
 
 build:
@@ -12,4 +12,4 @@ build:
     
     
   ci:
-     - psql --version
+     - redis-server --version
